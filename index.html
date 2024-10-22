@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel's Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+          
+        
+        body{
+            background-color: #160333;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+          /*  align-items: center;*/
+            height: 100vmin
+            
+        }
+        h1{
+            font-size: 50px;
+            margin-block: 10px;
+        }
+        form{
+            background-color: #160333;
+            width: 2000px;
+            height:1000px;
+            color: white;
+            padding: 50px;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 30px;
+            
+           
+        }
+        img{
+            width: 500px;
+        }
+        .form-input{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .form-input input{
+            padding: 15px;
+            outline: none;
+            border-radius: 10px;
+            border: none;
+            font-weight: 20px;
+         
+           
+        
+        }
+        label{
+            cursor: pointer;
+        }
+        select{
+            width: 100%;
+            border-radius: 50px;
+            padding: 0px;
+         /*   box-sizing: 200px;*/
+        }
+        button{
+            background-color: #DE3561;
+            color: white;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 5px 15px;
+            font-size: 35px;
+            border-radius: 30px;
+        }
+        button:hover{
+            background-color: #a779c0;
+        }
+    </style>
+</head>
+<body >
+    <form action="">        
+        <img src="logo.png" alt="chaindustry logo">
+        <h1>Sign up for our Masterclass</h1>
+        <p>Learn a Digital Skill with Chaindustry.
+        Fill the form below</p> <br>
+        <div class="form-input">
+            <label for= ><b>Email Address</b></label> 
+            <input type="text">
+            <label for=""><b>First Name</b</label>
+            <input type="text">
+            <label for="">Last Name</label>
+            <input type="text">
+            <label for="Username">Username</label>
+            <input type="text">
+            <label for="">Create Password</label>
+            <input type="text">
+            <label for="">Confirm Password</label>
+            <input type="text">
+            <label for="">Referral Code (Optional)</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Select Your Preferred Mode Of Learning </label>
+            <select name="" id="Choice">
+                <option value="online"><b>Online</b></option>
+                <option value="in-person">In-person</option>
+            </select>
+        </div>
+        <div>
+            <p>Choose Your Payment Mode</p>
+            <input type="radio" id="USD" name="payment-mode">
+            <label for="USD">USD</label>
+            <div>
+                <input type="radio" id="naira" name="payment-mode">
+                <label for="naira">Naira</label>
+            </div>            
+        </div> <br>
+        <div>
+            <p>Select You Preferred Course</p>
+            <div>
+                <input type="checkbox" id="empato">
+                <label for="empato">Blogging and SEO</label> <br>
+            </div>
+            <div>
+                <input type="checkbox" id="bernard">
+                <label for="Data Analysis">Data Analysis</label> <br>
+            </div>
+            <div>
+                <input type="checkbox" id="bernard">
+                <label for="Digital Marketing">Digital Marketing</label> <br>
+            </div>
+             <div>
+                <input type="checkbox" id="Courses">
+                <label for="Data Analysis">Web/Blockchain Development</label>
+            </div>
+
+ <div>
+                <input type="checkbox" id="Courses">
+                <label for="Design">Design</label>
+            </div>
+
+ <div>
+                <input type="checkbox" id="Courses">
+                <label for="Video Editing">Video Editing</label>
+            </div>
+
+
+        </div> <br>
+        
+      <button><b>Submit</b></button> <br></div>
+    </form>
+</body>
+</html>
