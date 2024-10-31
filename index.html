@@ -1,162 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel's Assignment</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        *{
-            padding:0;
-            margin: 0px;
-            box-sizing: border-box;
-        }
-        
-          
-        
-        body{
-            background-color:mediumpurple;
-            font-family: "Poppins", sans-serif;
-            display: flex;
-            justify-content: center;
-           align-items: center;
-           min-height: 100vh
-            
-        }
-        h1{
-            font-size: 40px;
-            margin-block: 10px;
-        }
-        form{
-            background-color: #160333;
-            width: 500px;
-           
-            color: white;
-            padding: 40px;
-            border-radius: 40px;
-            font-weight: bold;
-            font-size: 20px;
-            
-           
-        }
-        img{
-            width: 200px;
-        }
-        .form-input{
-            display: flex;
-            flex-direction: column;
-            
-        }
-        .form-input input{
-            padding: 5px;
-            outline: none;
-            border-radius: 10px;
-            border: none;
-         /*   font-weight: 20px;*/
-         
-           
-        
-        }
-        label{
-            cursor: pointer;
-        }
-        select{
-            width: 100%;
-            border-radius: 30px;
-            padding: 5px;
-         /*   box-sizing: 200px;*/
-        }
-        button{
-            background-color: #DE3561;
-            color: white;
-            width: 100%;
-            border: none;
-            cursor: pointer;
-            padding: 5px 15px;
-            font-size: 35px;
-            border-radius: 30px;
-        }
-        button:hover{
-            background-color: #a779c0;
-        }
-        
-                
-        
-    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <style>
+             .container{
+                 display: grid;
+                 width: 90%;
+                max-width: 1100px;
+                margin-inline:auto;
+                grid-template-columns: repeat(5,1fr);
+                min-height: 100vh;
+                gap: 15px;
+                background-color: beige;
+             } 
+             
+             .box{
+                   background-color: white;
+                     display: grid;
+                     place-items: center;
+                     font-size: 40px;
+             }
+             
+             @media screen and (max-width: 1024px){
+                     
+                       
+                     
+                     .container{
+                         grid-template-columns: repeat(4,1fr)    
+                         background-color: purple;
+                     }
+               
+               @media screen and (max-width:800px ) {
+                       
+                            
+                       
+                       .container{
+                           grid-template-columns: repeat(3 1fr)
+                           background-color:brown;
+                           
+                           
+                       }
+               }
+               @media screen and (max-width:625px){
+                       
+                              
+                       
+                       .container{
+                               grid-template-columns: repeat(2,1fr)
+                               background-color:orange;
+                       }
+               }
+               @media screen and (max-width: 300px){
+                       
+                        
+                       
+                       .container{
+                               grid-template-columns: repeat(1,1fr)
+                               background-color:red;
+                       }
+               }
+                  
+                       
+               
+             
+        </style>
 </head>
-<body >
-    <form action="">        
-        <img src="logo.png" alt="chaindustry logo">
-        <h1>Sign up for our Masterclass</h1>
-        <p>Learn a Digital Skill with Chaindustry.
-        Fill the form below</p> <br>
-        <div class="form-input">
-            <label for= ><b>Email Address</b></label> 
-            <input type="text">
-            <label for=""><b>First Name</b</label>
-            <input type="text">
-            <label for="">Last Name</label>
-            <input type="text">
-            <label for="Username">Username</label>
-            <input type="text">
-            <label for="">Create Password</label>
-            <input type="text">
-            <label for="">Confirm Password</label>
-            <input type="text">
-            <label for="">Referral Code (Optional)</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Select Your Preferred Mode Of Learning </label>
-            <select name="" id="Choice">
-                <option value="online"><b>Online</b></option>
-                <option value="in-person">In-person</option>
-            </select>
-        </div>
-        <div>
-            <p>Choose Your Payment Mode</p>
-            <input type="radio" id="USD" name="payment-mode">
-            <label for="USD">USD</label>
-            <div>
-                <input type="radio" id="naira" name="payment-mode">
-                <label for="naira">Naira</label>
-            </div>            
-        </div> <br>
-        <div>
-            <p>Select You Preferred Course</p>
-            <div>
-                <input type="checkbox" id="empato">
-                <label for="empato">Blogging and SEO</label> <br>
-            </div>
-            <div>
-                <input type="checkbox" id="bernard">
-                <label for="Data Analysis">Data Analysis</label> <br>
-            </div>
-            <div>
-                <input type="checkbox" id="bernard">
-                <label for="Digital Marketing">Digital Marketing</label> <br>
-            </div>
-             <div>
-                <input type="checkbox" id="Courses">
-                <label for="Data Analysis">Web/Blockchain Development</label>
-            </div>
 
- <div>
-                <input type="checkbox" id="Courses">
-                <label for="Design">Design</label>
-            </div>
-
- <div>
-                <input type="checkbox" id="Courses">
-                <label for="Video Editing">Video Editing</label>
-            </div>
-
-
-        </div> <br>
+<body>
+<div class="container">
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
         
-      <button><b>Submit</b></button> <br></div>
-    </form>
+
+
+        
+</div>
 </body>
+
 </html>
